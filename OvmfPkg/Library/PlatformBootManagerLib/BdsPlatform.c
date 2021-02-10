@@ -1534,8 +1534,9 @@ PlatformBootManagerAfterConsole (
 
   RemoveStaleFvFileOptions ();
   SetBootOrderFromQemu ();
-
-  PlatformBmPrintScRegisterHandler ();
+  
+  // Disabled to prevent BdsDxe messages upon boot
+  //PlatformBmPrintScRegisterHandler ();
 }
 
 /**
